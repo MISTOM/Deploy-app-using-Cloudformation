@@ -1,3 +1,3 @@
 # Deploy-app-using-Cloudformation
 
-![project_architecture](.udagram_architecture.jpeg)
+![project_architecture](udagram_architecture.jpeg)
