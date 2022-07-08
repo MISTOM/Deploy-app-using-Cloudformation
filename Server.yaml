@@ -38,8 +38,8 @@ Resources:
           - s3-object-lambda:Get*
           - s3-object-lambda:List*
           Resource: 
-          - arn:aws:s3:::udagram2345/
-          - arn:aws:s3:::udagram2345/*
+          - arn:aws:s3:::udagram5000/
+          - arn:aws:s3:::udagram5000/*
       Roles:
       - !Ref UdacityS3ReadOnlyEC2Role
   ProfileWithRolesForOurApp:
@@ -106,7 +106,7 @@ Resources:
           systemctl start apache2.service
           cd /var/www/html
           apt-get install awscli unzip -y 
-          aws s3 cp s3://udagram2345/app.zip . 
+          aws s3 cp s3://udagram5000/app.zip . 
           unzip -o app.zip
       SecurityGroups: 
         - !Ref WebAppSecurityGroup
